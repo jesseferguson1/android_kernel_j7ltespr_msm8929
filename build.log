@@ -1,0 +1,158 @@
+
+==============================================
+START : FUNC_BUILD_KERNEL
+==============================================
+
+build project=kspr
+build common config=msm8929_sec_defconfig 
+build variant config=msm8929_sec_j7_spr_defconfig 
+build secure option= 
+build SEANDROID option= 
+build selinux defconfig=selinux_defconfig 
+build selinux log defconfig=selinux_log_defconfig 
+build tima defconfig= 
+rm files in : /home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/obj/KERNEL_OBJ/arch/arm/boot/dts/*.dtb
+make: Entering directory '/home/sohren/android/j7/kernel'
+  GEN     /home/sohren/android/android/out/target/product/j7ltespr/obj/KERNEL_OBJ/Makefile
+drivers/misc/Kconfig:414:warning: type of 'TIMA_LOG' redefined from 'boolean' to 'tristate'
+drivers/misc/Kconfig:773:warning: choice value used outside its choice group
+drivers/misc/Kconfig:775:warning: choice value used outside its choice group
+drivers/misc/Kconfig:783:warning: choice value used outside its choice group
+drivers/misc/Kconfig:786:warning: choice value used outside its choice group
+drivers/misc/Kconfig:788:warning: choice value used outside its choice group
+arch/arm/configs/msm8929_sec_defconfig:573:warning: override: reassigning to symbol MSM_XPU_ERR_FATAL
+arch/arm/configs/msm8929_sec_defconfig:620:warning: override: reassigning to symbol DEBUG_INFO
+arch/arm/configs/msm8929_sec_defconfig:661:warning: override: reassigning to symbol MOBICORE_SUPPORT
+arch/arm/configs/msm8929_sec_defconfig:662:warning: override: reassigning to symbol MOBICORE_API
+arch/arm/configs/msm8929_sec_defconfig:678:warning: override: reassigning to symbol SCHED_FREQ_INPUT
+warning: (SND_SOC_QDSP6V2) selects SND_SOC_MSM_QDSP6V2_INTF which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && MSM_QDSP6_APRV2)
+warning: (SND_SOC_APQ8084 && SND_SOC_MSM8X16 && SND_SOC_MSM8909 && SND_SOC_MSM8994) selects SND_SOC_CPE which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_WCD_CPE)
+warning: (ARCH_MSM_KRAIT && ARCH_MSM8909 && ARCH_MSM8916 && ARCH_MSM8610 && ARCH_MSM8226) selects DEVFREQ_GOV_MSM_BW_HWMON which has unmet direct dependencies (PM_DEVFREQ && (ARCH_MSM_KRAIT || ARCH_MSM_BIMC_BWMON))
+arch/arm/configs/selinux_defconfig:1:warning: override: reassigning to symbol EXT2_FS_XATTR
+arch/arm/configs/selinux_defconfig:4:warning: override: reassigning to symbol EXT4_FS_SECURITY
+arch/arm/configs/selinux_defconfig:5:warning: override: reassigning to symbol AUDIT
+arch/arm/configs/selinux_defconfig:7:warning: override: reassigning to symbol SECURITY
+arch/arm/configs/selinux_defconfig:8:warning: override: reassigning to symbol LSM_MMAP_MIN_ADDR
+arch/arm/configs/selinux_defconfig:9:warning: override: reassigning to symbol SECURITY_NETWORK
+arch/arm/configs/selinux_defconfig:10:warning: override: reassigning to symbol SECURITY_SELINUX
+arch/arm/configs/selinux_defconfig:13:warning: symbol value 'y' invalid for SECURITY_SELINUX_CHECKREQPROT_VALUE
+arch/arm/configs/selinux_defconfig:15:warning: override: reassigning to symbol NF_CONNTRACK_SECMARK
+arch/arm/configs/selinux_defconfig:16:warning: override: reassigning to symbol NETFILTER_XT_TARGET_CONNSECMARK
+arch/arm/configs/selinux_defconfig:18:warning: override: reassigning to symbol IP_NF_SECURITY
+arch/arm/configs/selinux_defconfig:27:warning: unexpected data
+arch/arm/configs/msm8929_sec_j7_spr_defconfig:9:warning: override: reassigning to symbol INPUT_UINPUT
+arch/arm/configs/msm8929_sec_j7_spr_defconfig:10:warning: override: reassigning to symbol INPUT_GPIO
+arch/arm/configs/msm8929_sec_j7_spr_defconfig:21:warning: override: reassigning to symbol SENSORS_HALL
+arch/arm/configs/msm8929_sec_j7_spr_defconfig:72:warning: override: reassigning to symbol BATTERY_SWELLING
+arch/arm/configs/msm8929_sec_j7_spr_defconfig:115:warning: override: reassigning to symbol ZSMALLOC
+arch/arm/configs/msm8929_sec_eng_defconfig:24:warning: override: reassigning to symbol SLUB_DEBUG
+arch/arm/configs/msm8929_sec_eng_defconfig:47:warning: override: reassigning to symbol SEC_RESTRICT_ROOTING
+arch/arm/configs/msm8929_sec_eng_defconfig:48:warning: override: reassigning to symbol SEC_RESTRICT_SETUID
+arch/arm/configs/msm8929_sec_eng_defconfig:49:warning: override: reassigning to symbol SEC_RESTRICT_FORK
+arch/arm/configs/msm8929_sec_eng_defconfig:50:warning: override: reassigning to symbol SEC_RESTRICT_ROOTING_LOG
+arch/arm/configs/msm8929_sec_eng_defconfig:58:warning: override: reassigning to symbol SECCOMP
+arch/arm/configs/msm8929_sec_eng_defconfig:61:warning: override: reassigning to symbol DEVMEM
+arch/arm/configs/msm8929_sec_eng_defconfig:62:warning: override: reassigning to symbol DEVKMEM
+warning: (SND_SOC_QDSP6V2) selects SND_SOC_MSM_QDSP6V2_INTF which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && MSM_QDSP6_APRV2)
+warning: (SND_SOC_APQ8084 && SND_SOC_MSM8X16 && SND_SOC_MSM8909 && SND_SOC_MSM8994) selects SND_SOC_CPE which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_WCD_CPE)
+warning: (ARCH_MSM_KRAIT && ARCH_MSM8909 && ARCH_MSM8916 && ARCH_MSM8610 && ARCH_MSM8226) selects DEVFREQ_GOV_MSM_BW_HWMON which has unmet direct dependencies (PM_DEVFREQ && (ARCH_MSM_KRAIT || ARCH_MSM_BIMC_BWMON))
+KCONFIG_SELINUX(arch/arm/configs/selinux_defconfig)
+KCONFIG_LOG_SELINUX(arch/arm/configs/selinux_log_defconfig)
+KCONFIG_TIMA((null))
+KCONFIG_DMVERITY((null))
+KCONFIG_VARIANT(arch/arm/configs/msm8929_sec_j7_spr_defconfig)
+KCONFIG_DEBUG(arch/arm/configs/msm8929_sec_eng_defconfig)
+#
+# configuration written to .config
+#
+make: Leaving directory '/home/sohren/android/j7/kernel'
+make: Entering directory '/home/sohren/android/j7/kernel'
+  GEN     /home/sohren/android/android/out/target/product/j7ltespr/obj/KERNEL_OBJ/Makefile
+scripts/kconfig/conf --silentoldconfig Kconfig
+drivers/misc/Kconfig:414:warning: type of 'TIMA_LOG' redefined from 'boolean' to 'tristate'
+drivers/misc/Kconfig:773:warning: choice value used outside its choice group
+drivers/misc/Kconfig:775:warning: choice value used outside its choice group
+drivers/misc/Kconfig:783:warning: choice value used outside its choice group
+drivers/misc/Kconfig:786:warning: choice value used outside its choice group
+drivers/misc/Kconfig:788:warning: choice value used outside its choice group
+warning: (SND_SOC_QDSP6V2) selects SND_SOC_MSM_QDSP6V2_INTF which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && MSM_QDSP6_APRV2)
+warning: (SND_SOC_APQ8084 && SND_SOC_MSM8X16 && SND_SOC_MSM8909 && SND_SOC_MSM8994) selects SND_SOC_CPE which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_WCD_CPE)
+warning: (ARCH_MSM_KRAIT && ARCH_MSM8909 && ARCH_MSM8916 && ARCH_MSM8610 && ARCH_MSM8226) selects DEVFREQ_GOV_MSM_BW_HWMON which has unmet direct dependencies (PM_DEVFREQ && (ARCH_MSM_KRAIT || ARCH_MSM_BIMC_BWMON))
+warning: (SND_SOC_QDSP6V2) selects SND_SOC_MSM_QDSP6V2_INTF which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && MSM_QDSP6_APRV2)
+warning: (SND_SOC_APQ8084 && SND_SOC_MSM8X16 && SND_SOC_MSM8909 && SND_SOC_MSM8994) selects SND_SOC_CPE which has unmet direct dependencies (SOUND && !M68K && !UML && SND && SND_SOC && SND_SOC_WCD_CPE)
+warning: (ARCH_MSM_KRAIT && ARCH_MSM8909 && ARCH_MSM8916 && ARCH_MSM8610 && ARCH_MSM8226) selects DEVFREQ_GOV_MSM_BW_HWMON which has unmet direct dependencies (PM_DEVFREQ && (ARCH_MSM_KRAIT || ARCH_MSM_BIMC_BWMON))
+  GEN     /home/sohren/android/android/out/target/product/j7ltespr/obj/KERNEL_OBJ/Makefile
+  CHK     include/generated/uapi/linux/version.h
+  CHK     include/generated/utsrelease.h
+  Using /home/sohren/android/j7/kernel as source for kernel
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+make[2]: 'include/generated/mach-types.h' is up to date.
+  CALL    /home/sohren/android/j7/kernel/scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  DTC     arch/arm/boot/dts/samsung/msm8929/../../msm8929-sec-j7-spr-r00.dtb
+Warning (reg_format): "reg" property in /soc/i2c@24/lm3632@11 has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+Warning (avoid_default_addr_size): Relying on default #address-cells value for /soc/i2c@24/lm3632@11
+Warning (avoid_default_addr_size): Relying on default #size-cells value for /soc/i2c@24/lm3632@11
+/home/sohren/android/j7/kernel/arch/arm/boot/dts/Makefile:222: warning: overriding recipe for target 'dtbs'
+/home/sohren/android/j7/kernel/arch/arm/boot/dts/Makefile:222: warning: ignoring old recipe for target 'dtbs'
+  Kernel: arch/arm/boot/Image is ready
+  Building modules, stage 2.
+  LZ4     arch/arm/boot/compressed/piggy.lz4
+  MODPOST 12 modules
+  AS      arch/arm/boot/compressed/piggy.lz4.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready
+make: Leaving directory '/home/sohren/android/j7/kernel'
+
+=================================
+START : FUNC_BUILD_DTIMAGE_TARGET
+=================================
+
+DT image target : /home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/dt.img
+/home/sohren/android/j7/kernel/tools/dtbTool -o /home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/dt.img -s 2048 		-p /home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/obj/KERNEL_OBJ/scripts/dtc/ /home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/obj/KERNEL_OBJ/arch/arm/boot/dts/
+DTB combiner:
+  Input directory: '/home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/obj/KERNEL_OBJ/arch/arm/boot/dts/'
+  Output file: '/home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/dt.img'
+Found file: msm8929-sec-j7-spr-r00.dtb ... chipset: 268, rev: 0, platform: 201457409, subtype: 0
+   additional chipset: 269, rev: 0, platform: 201457409, subtype: 0
+   additional chipset: 270, rev: 0, platform: 201457409, subtype: 0
+   additional chipset: 271, rev: 0, platform: 201457409, subtype: 0
+=> Found 4 unique DTB(s)
+
+Generating master DTB... 
+ (writing '/home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/obj/KERNEL_OBJ/arch/arm/boot/dts/msm8929-sec-j7-spr-r00.dtb' - 206848 bytes) Total wrote 208896 bytes
+completed
+
+=================================
+END   : FUNC_BUILD_DTIMAGE_TARGET
+=================================
+
+
+=================================
+END   : FUNC_BUILD_KERNEL
+=================================
+
+
+===================================
+START : FUNC_MKBOOTIMG
+===================================
+
+Making boot.img ...
+	tools/mkbootimg --kernel /home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/obj/KERNEL_OBJ/arch/arm/boot/zImage 			--ramdisk /home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/ramdisk.img 			--output /home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/boot.img 			--cmdline console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci 			--base 0x80000000 			--pagesize 2048 			--ramdisk_offset 0x02000000 			--tags_offset 0x01E00000 			--dt /home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/dt.img
+error: could not load ramdisk '/home/sohren/android/j7/kernel/../../android/out/target/product/j7ltespr/ramdisk.img'
+tar: boot.img: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+
+=================================================
+-->Note, copy to /../output/ directory
+=================================================
+
+===================================
+END   : FUNC_MKBOOTIMG
+===================================
+
+Total compile time is 36 seconds
